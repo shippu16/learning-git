@@ -20,12 +20,9 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="#"><span> Authentication </span> <span class="menu-arrow"></span></a>
+                            <a href="#"><span> Mentor </span> <span class="menu-arrow"></span></a>
                             <ul style="display: none;">
-                                <li><a href="login.php"> Login </a></li>
-                                <li><a href="register.php"> Register </a></li>
-                                <li><a href="forgot-password.php"> Forgot Password </a></li>
-                                <li><a href="lock-screen.php"> Lock Screen </a></li>
+                                <li><a href="manage_mentor.php"> Manage Mentor </a></li>
                             </ul>
                         </li>
                         <li class="submenu">

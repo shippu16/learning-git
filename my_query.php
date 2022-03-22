@@ -1,5 +1,7 @@
 <?php
 
+    /****************Add Data********************************
+    ********************************************************/
     function change_content(){
         if (isset($_GET['u_id'])) {
             echo 'Update';
@@ -37,13 +39,16 @@
     function fetch_data($tbl_name, $row_id='')
     {
         global $CONN;
-        
-        if ($row_id=="") {
-            // fetching all_row
+        if ($tbl_name=='mentor_profile') {
+            // fetching data from mentro_profile table
+            $sql = "select * from $tbl_name order by id desc";
+        }
+        elseif ($row_id=="" ) {
+            // fetching data from employee table
             $sql = "select * from $tbl_name where profile = '2' order by id desc";
         
         }else{
-            // fetching single row
+            // If row id is null and tbl name is employee - fetching single row from employee table
             $sql = "select id, name, email from $tbl_name where id = $row_id";
         }
         
